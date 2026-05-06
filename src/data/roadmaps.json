@@ -6,23 +6,19 @@
             {
                 "id": "web-lvl-1",
                 "title": "The Sea of Syntax",
-                "coordinates": {
-                    "x": -4,
-                    "y": 0,
-                    "z": -4
-                },
+                "coordinates": { "x": -4, "y": 0, "z": -4 },
                 "hex_color": "#e34c26",
                 "model_type": "beach",
                 "nodes": [
                     {
                         "task": "HTML Foundations",
-                        "resource_link": "https://www.theodinproject.com/paths/foundations/courses/foundations",
+                        "resource_link": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML",
                         "type": "Documentation",
                         "difficulty": "Beginner"
                     },
                     {
                         "task": "CSS Basics & Flexbox",
-                        "resource_link": "https://www.theodinproject.com/lessons/foundations-intro-to-css",
+                        "resource_link": "https://flexboxfroggy.com/",
                         "type": "Article",
                         "difficulty": "Beginner"
                     }
@@ -31,23 +27,19 @@
             {
                 "id": "web-lvl-2",
                 "title": "The Javascript Jungle",
-                "coordinates": {
-                    "x": -8,
-                    "y": 1,
-                    "z": -8
-                },
+                "coordinates": { "x": -8, "y": 1, "z": -8 },
                 "hex_color": "#f7df1e",
                 "model_type": "forest",
                 "nodes": [
                     {
                         "task": "JavaScript Basics",
-                        "resource_link": "https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics",
+                        "resource_link": "https://javascript.info/",
                         "type": "Article",
                         "difficulty": "Beginner"
                     },
                     {
                         "task": "DOM Manipulation",
-                        "resource_link": "https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events",
+                        "resource_link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents",
                         "type": "Article",
                         "difficulty": "Intermediate"
                     }
@@ -56,17 +48,13 @@
             {
                 "id": "web-lvl-3",
                 "title": "Next.js Nebula",
-                "coordinates": {
-                    "x": -12,
-                    "y": 2,
-                    "z": -12
-                },
+                "coordinates": { "x": -12, "y": 2, "z": -12 },
                 "hex_color": "#000000",
                 "model_type": "crystal",
                 "nodes": [
                     {
                         "task": "React Essentials",
-                        "resource_link": "https://nextjs.org/learn/react-foundations",
+                        "resource_link": "https://react.dev/learn",
                         "type": "Documentation",
                         "difficulty": "Intermediate"
                     },
@@ -87,23 +75,19 @@
             {
                 "id": "android-lvl-1",
                 "title": "Kotlin Coast",
-                "coordinates": {
-                    "x": 4,
-                    "y": 0,
-                    "z": -4
-                },
+                "coordinates": { "x": 4, "y": 0, "z": -4 },
                 "hex_color": "#7F52FF",
                 "model_type": "beach",
                 "nodes": [
                     {
                         "task": "Introduction to Kotlin",
-                        "resource_link": "https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1",
+                        "resource_link": "https://kotlinlang.org/docs/getting-started.html",
                         "type": "Article",
                         "difficulty": "Beginner"
                     },
                     {
                         "task": "Functions & Variables",
-                        "resource_link": "https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1",
+                        "resource_link": "https://kotlinlang.org/docs/basic-syntax.html",
                         "type": "Documentation",
                         "difficulty": "Beginner"
                     }
@@ -112,23 +96,19 @@
             {
                 "id": "android-lvl-2",
                 "title": "Compose Canyon",
-                "coordinates": {
-                    "x": 8,
-                    "y": 1,
-                    "z": -8
-                },
+                "coordinates": { "x": 8, "y": 1, "z": -8 },
                 "hex_color": "#4285F4",
                 "model_type": "canyon",
                 "nodes": [
                     {
-                        "task": "Building Basic Layouts",
-                        "resource_link": "https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-2",
+                        "task": "Jetpack Compose Tutorial",
+                        "resource_link": "https://developer.android.com/jetpack/compose/tutorial",
                         "type": "Video",
                         "difficulty": "Intermediate"
                     },
                     {
                         "task": "State in Compose",
-                        "resource_link": "https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-1",
+                        "resource_link": "https://developer.android.com/jetpack/compose/state",
                         "type": "Article",
                         "difficulty": "Intermediate"
                     }
@@ -137,23 +117,19 @@
             {
                 "id": "android-lvl-3",
                 "title": "Architecture Alps",
-                "coordinates": {
-                    "x": 12,
-                    "y": 2,
-                    "z": -12
-                },
+                "coordinates": { "x": 12, "y": 2, "z": -12 },
                 "hex_color": "#0F9D58",
                 "model_type": "mountain",
                 "nodes": [
                     {
-                        "task": "ViewModel & StateFlow",
-                        "resource_link": "https://developer.android.com/courses/pathways/android-basics-compose-unit-4-pathway-1",
+                        "task": "ViewModel & State",
+                        "resource_link": "https://developer.android.com/topic/libraries/architecture/viewmodel",
                         "type": "Documentation",
                         "difficulty": "Advanced"
                     },
                     {
-                        "task": "Room Database",
-                        "resource_link": "https://developer.android.com/courses/pathways/android-basics-compose-unit-6-pathway-1",
+                        "task": "Data Layer (Room)",
+                        "resource_link": "https://developer.android.com/training/data-storage/room",
                         "type": "Article",
                         "difficulty": "Advanced"
                     }
@@ -168,24 +144,20 @@
             {
                 "id": "unity-lvl-1",
                 "title": "C# Shores",
-                "coordinates": {
-                    "x": -4,
-                    "y": 0,
-                    "z": 4
-                },
+                "coordinates": { "x": -4, "y": 0, "z": 4 },
                 "hex_color": "#9b4f96",
                 "model_type": "beach",
                 "nodes": [
                     {
                         "task": "Variables and Functions",
-                        "resource_link": "https://learn.unity.com/project/unit-1-player-control",
-                        "type": "Video",
+                        "resource_link": "https://learn.unity.com/tutorial/variables-and-functions",
+                        "type": "Documentation",
                         "difficulty": "Beginner"
                     },
                     {
-                        "task": "Player Control",
-                        "resource_link": "https://learn.unity.com/project/unit-1-player-control",
-                        "type": "Article",
+                        "task": "Player Movement Basics",
+                        "resource_link": "https://www.youtube.com/watch?v=f473C43s8nE",
+                        "type": "Video",
                         "difficulty": "Beginner"
                     }
                 ]
@@ -193,24 +165,20 @@
             {
                 "id": "unity-lvl-2",
                 "title": "Physics Plains",
-                "coordinates": {
-                    "x": -8,
-                    "y": 1,
-                    "z": 8
-                },
+                "coordinates": { "x": -8, "y": 1, "z": 8 },
                 "hex_color": "#222c37",
                 "model_type": "plains",
                 "nodes": [
                     {
-                        "task": "Basic Gameplay",
-                        "resource_link": "https://learn.unity.com/project/unit-2-basic-gameplay",
-                        "type": "Video",
+                        "task": "Rigidbody & Physics",
+                        "resource_link": "https://docs.unity3d.com/Manual/class-Rigidbody.html",
+                        "type": "Documentation",
                         "difficulty": "Intermediate"
                     },
                     {
-                        "task": "Sound and Effects",
-                        "resource_link": "https://learn.unity.com/project/unit-3-sound-and-effects",
-                        "type": "Article",
+                        "task": "Collision Detection",
+                        "resource_link": "https://www.youtube.com/watch?v=1Y9vPZOnnNA",
+                        "type": "Video",
                         "difficulty": "Intermediate"
                     }
                 ]
@@ -218,23 +186,19 @@
             {
                 "id": "unity-lvl-3",
                 "title": "Gameplay Glacier",
-                "coordinates": {
-                    "x": -12,
-                    "y": 2,
-                    "z": 12
-                },
+                "coordinates": { "x": -12, "y": 2, "z": 12 },
                 "hex_color": "#ffffff",
                 "model_type": "arctic",
                 "nodes": [
                     {
-                        "task": "Gameplay Mechanics",
-                        "resource_link": "https://learn.unity.com/project/unit-4-gameplay-mechanics",
+                        "task": "Game Manager & Logic",
+                        "resource_link": "https://www.youtube.com/watch?v=VAsEyk_D_L8",
                         "type": "Video",
                         "difficulty": "Advanced"
                     },
                     {
-                        "task": "User Interface",
-                        "resource_link": "https://learn.unity.com/project/unit-5-user-interface",
+                        "task": "Canvas & UI Systems",
+                        "resource_link": "https://docs.unity3d.com/Manual/UISystem.html",
                         "type": "Documentation",
                         "difficulty": "Advanced"
                     }
@@ -249,23 +213,19 @@
             {
                 "id": "ai-lvl-1",
                 "title": "Python Peninsula",
-                "coordinates": {
-                    "x": 4,
-                    "y": 0,
-                    "z": 4
-                },
+                "coordinates": { "x": 4, "y": 0, "z": 4 },
                 "hex_color": "#306998",
                 "model_type": "plains",
                 "nodes": [
                     {
-                        "task": "Hello, Python",
-                        "resource_link": "https://www.kaggle.com/learn/python",
-                        "type": "Article",
+                        "task": "Python for Beginners",
+                        "resource_link": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+                        "type": "Video",
                         "difficulty": "Beginner"
                     },
                     {
-                        "task": "Booleans and Conditionals",
-                        "resource_link": "https://www.kaggle.com/learn/python",
+                        "task": "Booleans and Loops",
+                        "resource_link": "https://www.w3schools.com/python/python_while_loops.asp",
                         "type": "Article",
                         "difficulty": "Beginner"
                     }
@@ -274,23 +234,19 @@
             {
                 "id": "ai-lvl-2",
                 "title": "Pandas Plateau",
-                "coordinates": {
-                    "x": 8,
-                    "y": 1,
-                    "z": 8
-                },
+                "coordinates": { "x": 8, "y": 1, "z": 8 },
                 "hex_color": "#150458",
                 "model_type": "desert",
                 "nodes": [
                     {
-                        "task": "Creating, Reading and Writing",
-                        "resource_link": "https://www.kaggle.com/learn/pandas",
-                        "type": "Article",
+                        "task": "Pandas DataFrames",
+                        "resource_link": "https://pandas.pydata.org/docs/user_guide/10min.html",
+                        "type": "Documentation",
                         "difficulty": "Intermediate"
                     },
                     {
-                        "task": "Intro to Machine Learning",
-                        "resource_link": "https://www.kaggle.com/learn/intro-to-machine-learning",
+                        "task": "Machine Learning Intro",
+                        "resource_link": "https://scikit-learn.org/stable/tutorial/basic/tutorial.html",
                         "type": "Documentation",
                         "difficulty": "Intermediate"
                     }
@@ -298,24 +254,20 @@
             },
             {
                 "id": "ai-lvl-3",
-                "title": "Deep Learning Volcano",
-                "coordinates": {
-                    "x": 12,
-                    "y": 2,
-                    "z": 12
-                },
+                "title": "Neural Volcano",
+                "coordinates": { "x": 12, "y": 2, "z": 12 },
                 "hex_color": "#FF6F00",
                 "model_type": "volcano",
                 "nodes": [
                     {
                         "task": "Neural Networks Basics",
-                        "resource_link": "https://www.deeplearning.ai/courses/neural-networks-and-deep-learning/",
+                        "resource_link": "https://www.youtube.com/watch?v=aircAruvnKk",
                         "type": "Video",
                         "difficulty": "Advanced"
                     },
                     {
-                        "task": "Convolutional Neural Networks",
-                        "resource_link": "https://www.deeplearning.ai/courses/convolutional-neural-networks/",
+                        "task": "TensorFlow vs PyTorch",
+                        "resource_link": "https://www.youtube.com/watch?v=v7unG_T_7S0",
                         "type": "Video",
                         "difficulty": "Advanced"
                     }
