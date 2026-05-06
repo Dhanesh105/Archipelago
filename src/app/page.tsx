@@ -1,9 +1,12 @@
 import Scene from "@/components/Scene";
 import UIOverlay from "@/components/UIOverlay";
 import WelcomeModal from "@/components/WelcomeModal";
+import ErrorState from "@/components/ErrorState";
 import { connectToDatabase } from "@/lib/db";
 import UserProgress from "@/models/UserProgress";
 import { Suspense } from "react";
+
+export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Dev Archipelago | 3D Learning Roadmap",
@@ -14,7 +17,6 @@ export default async function Home() {
   try {
     await connectToDatabase();
 
-    // Use a mock userId for the MVP
     const userId = "guest_user";
     let progress = await UserProgress.findOne({ userId });
 
@@ -24,20 +26,16 @@ export default async function Home() {
       progress = await UserProgress.create({
         userId,
         completedNodes: [],
-        unlockedDomains: requiredDomains, // MVP: Everything unlocked by default
+        unlockedDomains: requiredDomains,
       });
     } else {
-      // Migrate legacy IDs if they exist in the DB
       let modified = false;
-      
-      // Cleanup old _dev suffix IDs
       progress.unlockedDomains = progress.unlockedDomains.map((d: string) => {
         const clean = d.replace("_dev", "").replace("_games", "").replace("_data", "");
         if (clean !== d) modified = true;
         return clean;
       });
 
-      // Ensure all domains exist
       requiredDomains.forEach(domain => {
         if (!progress.unlockedDomains.includes(domain)) {
           progress.unlockedDomains.push(domain);
@@ -48,7 +46,6 @@ export default async function Home() {
       if (modified) await progress.save();
     }
 
-    // Serialize mongoose document
     const unlockedDomains = JSON.parse(JSON.stringify(progress.unlockedDomains));
     const completedNodes = JSON.parse(JSON.stringify(progress.completedNodes));
 
@@ -56,12 +53,10 @@ export default async function Home() {
       <main className="relative w-full h-screen overflow-hidden text-neutral-50 font-sans selection:bg-cyan-500/30">
         <WelcomeModal />
 
-        {/* 3D Scene Layer */}
         <Suspense fallback={<LoadingScreen />}>
           <Scene unlockedDomains={unlockedDomains} />
         </Suspense>
 
-        {/* 2D UI Overlay Layer */}
         <UIOverlay completedNodes={completedNodes} />
 
         {/* Header / Brand */}
@@ -90,13 +85,7 @@ export default async function Home() {
     );
   } catch (error) {
     console.error("Critical Failure in Home:", error);
-    return (
-      <div className="w-full h-screen flex flex-col items-center justify-center bg-[#020617] text-white p-6 text-center">
-        <h1 className="text-4xl font-black mb-4">The Ocean is Stormy</h1>
-        <p className="text-white/60 max-w-md mb-8">We couldn't connect to the roadmap database. Please check your connection or try again later.</p>
-        <button onClick={() => window.location.reload()} className="px-8 py-3 rounded-xl bg-white/10 border border-white/20 font-bold hover:bg-white/20 transition">Retry Connection</button>
-      </div>
-    );
+    return <ErrorState />;
   }
 }
 
