@@ -74,6 +74,15 @@
 
 ---
 
+## 🚀 Deployment (Vercel)
+
+When deploying to Vercel, ensure you have set the `MONGODB_URI` in your Project Settings.
+
+> [!NOTE]
+> This project uses `.npmrc` with `legacy-peer-deps=true` to resolve versioning conflicts between `framer-motion-3d` and `@react-three/fiber` during the build process.
+
+---
+
 ## 📂 Project Structure
 
 ```text
